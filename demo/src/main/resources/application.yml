@@ -24,6 +24,9 @@ spring:
       dll-auto: update
 server:
   port: 8081
----
 
-profile: azure
+amazon:
+  credentials:
+    accessKey: AKIA4CR3QRBTKT2NERXI
+    secretKey: 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
+---
