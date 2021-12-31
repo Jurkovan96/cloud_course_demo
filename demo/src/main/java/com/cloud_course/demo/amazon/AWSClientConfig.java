@@ -49,12 +49,11 @@ public class AWSClientConfig {
                 .withCredentials(new AWSStaticCredentialsProvider(awsCredentialsImp))
                 .enableForceGlobalBucketAccess()
                 .withRegion(region).build();
-        //TODO Configure settings on S3 Bucket for access
-        //amazonS3.setBucketPolicy(bucket, awsPolicy().toJson());
+        amazonS3.setBucketPolicy(bucket, awsPolicy().toJson());
         return amazonS3;
     }
 
-    @Bean
+   @Bean
     public Policy awsPolicy() {
         Statement allowPublicReadStatement = new Statement(Statement.Effect.Allow)
                 .withPrincipals(Principal.AllUsers)
