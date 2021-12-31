@@ -1,7 +1,7 @@
-package com.cloud_course.demo.controller;
+package com.cloud_course.demo.amazon.rekognition.controller;
 
+import com.cloud_course.demo.amazon.rekognition.service.AWSRekognitionService;
 import com.cloud_course.demo.model.response.ImageResponse;
-import com.cloud_course.demo.rekognition.AWSService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Profile;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Profile("amazon")
 public class RekognitionController {
 
-    private final AWSService awsService;
+    private final AWSRekognitionService awsService;
 
     @GetMapping("/labels")
     public ResponseEntity<ImageResponse> getImageLabels(@RequestParam(name = "image") String image) {

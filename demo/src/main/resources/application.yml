@@ -29,4 +29,6 @@ amazon:
   credentials:
     accessKey: AKIA4CR3QRBTKT2NERXI
     secretKey: 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
+  region: eu-west-2
+  bucket: image-bucket-one1
 ---

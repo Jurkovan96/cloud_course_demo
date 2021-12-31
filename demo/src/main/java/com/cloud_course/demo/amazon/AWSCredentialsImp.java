@@ -1,4 +1,4 @@
-package com.cloud_course.demo.rekognition;
+package com.cloud_course.demo.amazon;
 
 import com.amazonaws.auth.AWSCredentials;
 import lombok.extern.slf4j.Slf4j;

@@ -8,7 +8,7 @@ public class DemoApplication {
 
     public static void main(String[] args) {
         SpringApplication springApplication = new SpringApplication(DemoApplication.class);
-        springApplication.setAdditionalProfiles("azure");
+        springApplication.setAdditionalProfiles("amazon");
         springApplication.run();
     }
 }
